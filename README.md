@@ -1,69 +1,119 @@
-# Apuntes ADSO · SENA
+<div align="center">
 
-![Ficha](https://img.shields.io/badge/Ficha-3315796-2563EB?style=flat-square)
-![Jornada](https://img.shields.io/badge/Jornada-Diurna-F59E0B?style=flat-square)
-![Trimestre](https://img.shields.io/badge/Trimestre-4-10B981?style=flat-square)
+# 📚 Apuntes ADSO — SENA
 
-Repositorio de apuntes del Tecnólogo en Análisis y Desarrollo de Software (ADSO) - SENA, ficha **3315796**, jornada diurna, cuarto trimestre.
+### Análisis y Desarrollo de Software · Bitácora técnica y académica
 
-Cada carpeta corresponde a una materia y contiene su propio índice de clases en orden cronológico (ISO 8601).
+![Status](https://img.shields.io/badge/estado-en%20progreso-brightgreen?style=for-the-badge)
+![SENA](https://img.shields.io/badge/SENA-ADSO-39A900?style=for-the-badge&/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciLz4=)
+![Markdown](https://img.shields.io/badge/formato-Markdown-informational?style=for-the-badge&logo=markdown)
+![License](https://img.shields.io/badge/licencia-MIT-lightgrey?style=for-the-badge)
 
-## Equipo ejecutor
+_"El código se escribe una vez, pero se lee muchas. Documentar es programar para el futuro."_
 
-| Instructor(a) | Correo | Materia a cargo |
-|---|---|---|
-| Zaida Patricia Ojeda Guzmán | zpatriciao@misena.edu.co | Bases de datos (SQL) |
-| Heiver Cuesta Dávila | hcuesta@sena.edu.co | Codificación del software (React) |
-| Julio Eduardo Valenzuela Díaz | jevalenzuela@sena.edu.co | Inglés |
-| Nubia Marcela Benítez López | nbenitez@sena.edu.co | Protección ambiental y SST |
+</div>
 
-## Horario semanal
+---
 
-| Día | Instructor(a) | Hora | Ambiente |
-|---|---|---|---|
-| Lunes | Zaida Patricia Ojeda Guzmán | 6:00 - 10:00 | 304 |
-| Lunes | Julio Eduardo Valenzuela Díaz | 10:00 - 14:00 | 319 |
-| Martes | Zaida Patricia Ojeda Guzmán | 6:00 - 10:00 | 304 |
-| Miércoles | Heiver Cuesta Dávila | 6:00 - 10:00 | 304 |
-| Jueves | Heiver Cuesta Dávila | 6:00 - 10:00 | 304 |
-| Viernes | Zaida Patricia Ojeda Guzmán | 6:00 - 10:00 | 304 |
+## 🧭 Índice general
 
-## Explora las materias
+| #   | Módulo                     | Descripción                                      | Estado      |
+| --- | -------------------------- | ------------------------------------------------ | ----------- |
+| 1   | [🗄️ SQL](./sql/)           | Bases de datos, consultas, modelado relacional   | 🟢 Activo   |
+| 2   | [⚛️ React](./react/)       | Componentes, hooks, JSON Server, consumo de APIs | 🟢 Activo   |
+| 3   | [🌐 Inglés](./ingles/)     | Vocabulario técnico, gramática aplicada a TI     | 🟡 En curso |
+| 4   | [🚀 Proyecto](./proyecto/) | Proyecto formativo — evidencias y avances        | 🟢 Activo   |
 
-| | Materia | Instructor(es) |
-|---|---|---|
-| ![SQL](https://img.shields.io/badge/SQL-Bases%20de%20Datos-4479A1?style=flat-square&logo=mysql&logoColor=white) | [Ver apuntes](./sql/README.md) | Zaida Patricia Ojeda Guzmán |
-| ![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=flat-square&logo=react&logoColor=black) | [Ver apuntes](./react/README.md) | Zaida Patricia Ojeda Guzmán · Heiver Cuesta Dávila |
-| ![Inglés](https://img.shields.io/badge/Ingles-Comunicacion-B22234?style=flat-square) | [Ver apuntes](./ingles/README.md) | Julio Eduardo Valenzuela Díaz |
-| ![Proyecto](https://img.shields.io/badge/Proyecto-Formativo-FF6F00?style=flat-square) | [Ver apuntes](./proyecto/README.md) | Equipo ejecutor |
-| ![SST](https://img.shields.io/badge/SST-Ambiental-2E7D32?style=flat-square) | [Ver apuntes](./sst/README.md) | Nubia Marcela Benítez López |
+> 💡 Cada carpeta tiene su propio índice interno con los archivos ordenados por fecha (`YYYY-MM-DD-nombre-del-tema.md`).
 
-## Estructura del repositorio
+---
 
-```
-.
-├── README.md
+## 🗂️ Estructura del repositorio
+
+```text
+apuntes-adso/
+├── README.md                  # Índice general (este archivo)
 ├── sql/
-│   └── README.md
+│   └── YYYY-MM-DD-tema.md
 ├── react/
-│   └── README.md
+│   └── YYYY-MM-DD-tema.md
 ├── ingles/
-│   └── README.md
-├── proyecto/
-│   └── README.md
-└── sst/
-    └── README.md
+│   └── YYYY-MM-DD-tema.md
+└── proyecto/
+    └── YYYY-MM-DD-tema.md
 ```
 
-## Convenciones
+---
 
-- **Nomenclatura de archivos:** `YYYY-MM-DD-nombre-del-tema.md`
-- **Commits semánticos:** Conventional Commits adaptados a documentación, ej. `docs(sql): agregar comandos DML y configuración de XAMPP`
-- **Frontmatter obligatorio** en cada apunte:
-  ```yaml
-  ---
-  fecha: YYYY-MM-DD
-  materia: 
-  tema: 
-  ---
-  ```
+## ✅ Convenciones del repositorio
+
+<details>
+<summary><strong>📄 Formato de apuntes (clic para expandir)</strong></summary>
+
+Cada archivo `.md` inicia con un bloque de metadatos:
+
+```yaml
+---
+fecha: YYYY-MM-DD
+materia: React / SQL / Inglés / Proyecto
+tema: Título breve del tema
+---
+```
+
+Seguido de títulos estructurados (`##`, `###`), tablas cuando aplique y bloques de código con el lenguaje especificado.
+
+</details>
+
+<details>
+<summary><strong>🏷️ Nomenclatura de archivos</strong></summary>
+
+Todos los archivos siguen el estándar **ISO 8601**:
+
+```
+YYYY-MM-DD-nombre-del-tema.md
+```
+
+Ejemplo: `2026-09-01-json-server-endpoints.md`
+
+</details>
+
+<details>
+<summary><strong>📝 Commits semánticos (Conventional Commits)</strong></summary>
+
+| Tipo       | Uso                                           |
+| ---------- | --------------------------------------------- |
+| `docs`     | Apuntes, documentación, README                |
+| `feat`     | Nueva funcionalidad en el proyecto formativo  |
+| `fix`      | Corrección de errores                         |
+| `refactor` | Reorganización sin cambiar comportamiento     |
+| `chore`    | Tareas de mantenimiento (estructura, configs) |
+
+Ejemplo:
+
+```
+docs(react): agregar notas sobre JSON Server
+chore(readme): mejorar visualización del índice principal
+```
+
+</details>
+
+---
+
+## 📈 Progreso del trimestre
+
+```text
+SQL       ██████████████░░░░░░  70%
+React     ████████████░░░░░░░░  60%
+Inglés    ███████░░░░░░░░░░░░░  35%
+Proyecto  █████████████████░░░  85%
+```
+
+---
+
+<div align="center">
+
+**Autor:** _Brandon Guevara_ · **Ficha:** _3315796_ · **Programa:** ADSO — SENA
+
+⭐ _Repositorio de estudio personal — actualizado constantemente_
+
+</div>
