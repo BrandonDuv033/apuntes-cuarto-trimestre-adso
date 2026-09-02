@@ -7,8 +7,8 @@
 | Campo | Detalle |
 |---|---|
 | **Materia** | Componentes front-end y codificación del software |
-| **Instructor(a)** | Zaida Patricia Ojeda Guzmán (front-end) · Heiver Cuesta Dávila (codificación) |
-| **Correo** | zpatriciao@misena.edu.co · hcuesta@sena.edu.co |
+| **Instructor** | Heiver Cuesta Dávila |
+| **Correo** | hcuesta@sena.edu.co |
 | **Ambiente** | 304 |
 | **Trimestre** | 4 |
 | **Horario** | Miércoles y jueves · 6:00 - 10:00 |
@@ -21,11 +21,8 @@ Creación de componentes front-end y codificación del software de acuerdo con e
 
 - [ ]
 
-## Clases
-
-| Fecha | Tema | Enlace |
-|---|---|---|
-| YYYY-MM-DD |  | [Ver apunte](./YYYY-MM-DD-nombre-del-tema.md) |
+## 📂 Clases
+- [2026-08-06 · Crear proyecto React (CRA y Vite)](react/2026-08-06-crear-proyecto-react.md)
 
 ## Recursos adicionales
 
