@@ -1,30 +1,32 @@
-# 🇬🇧 Inglés
+# Inglés
 
-## 📋 Información General
+![Inglés](https://img.shields.io/badge/Ingles-Comunicacion-B22234?style=flat-square)
 
-| Campo             | Detalle |
-|-------------------|---------|
-| **Materia**       |         |
-| **Instructor(a)** |         |
-| **Correo**        |         |
-| **Ambiente**      |         |
-| **Trimestre**     |         |
-| **Horario**       |         |
+## Información general
 
-## 📝 Descripción
+| Campo | Detalle |
+|---|---|
+| **Materia** | Interactuar en lengua inglesa de forma oral y escrita |
+| **Instructor(a)** | Julio Eduardo Valenzuela Díaz |
+| **Correo** | jevalenzuela@sena.edu.co |
+| **Ambiente** | 319 |
+| **Trimestre** | 4 |
+| **Horario** | Lunes · 10:00 - 14:00 |
 
-> Escribe aquí una breve descripción de la materia, sus objetivos y competencias a desarrollar.
+## Descripción
 
-## 🎯 Temas vistos
+Desarrollo de la comunicación oral y escrita en inglés dentro de contextos sociales y laborales, discutiendo posibles soluciones a problemas según el Marco Común Europeo de Referencia para las Lenguas.
+
+## Temas vistos
 
 - [ ]
 
-## 📚 Clases
+## Clases
 
-| Fecha       | Tema | Enlace                                          |
-|-------------|------|--------------------------------------------------|
-| YYYY-MM-DD  |      | [Ver apunte](./YYYY-MM-DD-nombre-del-tema.md)     |
+| Fecha | Tema | Enlace |
+|---|---|---|
+| YYYY-MM-DD |  | [Ver apunte](./YYYY-MM-DD-nombre-del-tema.md) |
 
-## 🔗 Recursos adicionales
+## Recursos adicionales
 
 -

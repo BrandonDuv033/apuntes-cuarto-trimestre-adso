@@ -1,21 +1,23 @@
-# 🗄️ SQL / Bases de Datos
+# SQL · Bases de Datos
 
-## 📋 Información General
+![SQL](https://img.shields.io/badge/SQL-Bases%20de%20Datos-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
-| Campo             | Detalle |
-|-------------------|---------|
-| **Materia**       |         |
-| **Instructor(a)** |         |
-| **Correo**        |         |
-| **Ambiente**      |         |
-| **Trimestre**     |         |
-| **Horario**       |         |
+## Información general
 
-## 📝 Descripción
+| Campo | Detalle |
+|---|---|
+| **Materia** | Bases de datos (dentro de la solución de software) |
+| **Instructor(a)** | Zaida Patricia Ojeda Guzmán |
+| **Correo** | zpatriciao@misena.edu.co |
+| **Ambiente** | 304 |
+| **Trimestre** | 4 |
+| **Horario** | Lunes, martes y viernes · 6:00 - 10:00 |
 
-> Escribe aquí una breve descripción de la materia, sus objetivos y competencias a desarrollar.
+## Descripción
 
-## 🎯 Temas vistos
+Construcción de la base de datos del software a partir del modelo de datos, como parte del desarrollo de la solución de software de acuerdo con el diseño y las metodologías establecidas.
+
+## Temas vistos
 
 - [ ] Instalación y configuración de XAMPP
 - [ ] Comandos DML en MySQL
@@ -23,12 +25,12 @@
 - [ ] Vistas
 - [ ] Relaciones entre tablas
 
-## 📚 Clases
+## Clases
 
-| Fecha       | Tema                          | Enlace                                              |
-|-------------|-------------------------------|------------------------------------------------------|
-| YYYY-MM-DD  | Ej: Instalación de XAMPP      | [Ver apunte](./YYYY-MM-DD-instalacion-xampp.md)       |
+| Fecha | Tema | Enlace |
+|---|---|---|
+| YYYY-MM-DD | Ej: Instalación de XAMPP | [Ver apunte](./YYYY-MM-DD-instalacion-xampp.md) |
 
-## 🔗 Recursos adicionales
+## Recursos adicionales
 
 -

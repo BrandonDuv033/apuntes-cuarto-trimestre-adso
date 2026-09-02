@@ -1,30 +1,32 @@
-# 🚀 Proyecto Formativo
+# Proyecto Formativo
 
-## 📋 Información General
+![Proyecto](https://img.shields.io/badge/Proyecto-Formativo-FF6F00?style=flat-square)
 
-| Campo             | Detalle |
-|-------------------|---------|
-| **Materia**       |         |
-| **Instructor(a)** |         |
-| **Correo**        |         |
-| **Ambiente**      |         |
-| **Trimestre**     |         |
-| **Horario**       |         |
+## Información general
 
-## 📝 Descripción
+| Campo | Detalle |
+|---|---|
+| **Materia** | Proyecto formativo / planeación de la solución de software |
+| **Instructor(a)** | Equipo ejecutor (ver README raíz) |
+| **Correo** | — |
+| **Ambiente** | 304 |
+| **Trimestre** | 4 |
+| **Horario** | Según cronograma del proyecto |
 
-> Escribe aquí una breve descripción del proyecto formativo, alcance y objetivos.
+## Descripción
 
-## 🎯 Temas vistos
+Planeación y seguimiento de las actividades de construcción del software de acuerdo con el diseño establecido, integrando los avances de bases de datos, front-end e inglés en un solo producto.
+
+## Temas vistos
 
 - [ ]
 
-## 📚 Clases / Avances
+## Clases / Avances
 
-| Fecha       | Tema | Enlace                                          |
-|-------------|------|--------------------------------------------------|
-| YYYY-MM-DD  |      | [Ver apunte](./YYYY-MM-DD-nombre-del-tema.md)     |
+| Fecha | Tema | Enlace |
+|---|---|---|
+| YYYY-MM-DD |  | [Ver apunte](./YYYY-MM-DD-nombre-del-tema.md) |
 
-## 🔗 Recursos adicionales
+## Recursos adicionales
 
 -
