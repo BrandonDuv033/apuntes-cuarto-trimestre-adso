@@ -1,7 +1,6 @@
 ---
-fecha: 2026-07-20
-materia: SQL
-tema: Copias de seguridad, restauración de bases de datos, vistas y llaves foráneas
+Fecha: 2026-07-20
+Tema: Copias de seguridad, restauración de bases de datos, vistas y llaves foráneas
 ---
 
 # 🗓️ 20 de julio de 2026 (Lunes)

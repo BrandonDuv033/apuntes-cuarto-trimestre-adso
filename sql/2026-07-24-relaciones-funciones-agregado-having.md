@@ -1,7 +1,6 @@
 ---
-fecha: 2026-07-24
-materia: SQL
-tema: Relaciones entre tablas, funciones de agregado, vistas y modificación de tablas existentes
+Fecha: 2026-07-24
+Tema: Relaciones entre tablas, funciones de agregado, vistas y modificación de tablas existentes
 ---
 
 # 🗓️ 24 de julio de 2026 (Viernes)

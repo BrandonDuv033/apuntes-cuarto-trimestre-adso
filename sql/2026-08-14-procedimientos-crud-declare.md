@@ -1,7 +1,6 @@
 ---
-fecha: 2026-08-14
-materia: SQL
-tema: Procedimientos almacenados - CRUD con CASE y variables con DECLARE
+Fecha: 2026-08-14
+Tema: Procedimientos almacenados - CRUD con CASE y variables con DECLARE
 ---
 
 # 🗓️ 14 de agosto de 2026

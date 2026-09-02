@@ -1,7 +1,6 @@
 ---
-fecha: 2026-08-04
-materia: SQL
-tema: MySQL Workbench, funciones de texto, funciones de fecha y funciones matemáticas
+Fecha: 2026-08-04
+Tema: MySQL Workbench, funciones de texto, funciones de fecha y funciones matemáticas
 ---
 
 # 🗓️ 04 de agosto de 2026 (Martes)

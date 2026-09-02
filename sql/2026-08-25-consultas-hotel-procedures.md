@@ -1,7 +1,6 @@
 ---
-fecha: 2026-08-25
-materia: SQL
-tema: Consultas de práctica (sistema hotelero) y procedimientos con parámetros IN/OUT
+Fecha: 2026-08-25
+Tema: Consultas de práctica (sistema hotelero) y procedimientos con parámetros IN/OUT
 ---
 
 # 🗓️ 25 de agosto de 2026

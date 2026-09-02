@@ -1,7 +1,6 @@
 ---
-fecha: 2026-08-18
-materia: SQL
-tema: Procedimiento almacenado con parámetros IN y OUT
+Fecha: 2026-08-18
+Tema: Procedimiento almacenado con parámetros IN y OUT
 ---
 
 # 🗓️ 18 de agosto de 2026

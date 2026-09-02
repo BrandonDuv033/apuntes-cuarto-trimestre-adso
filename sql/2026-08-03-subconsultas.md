@@ -1,7 +1,6 @@
 ---
-fecha: 2026-08-03
-materia: SQL
-tema: Subconsultas, funciones de agregado y consultas con múltiples condiciones
+Fecha: 2026-08-03
+Tema: Subconsultas, funciones de agregado y consultas con múltiples condiciones
 ---
 
 # 🗓️ 03 de agosto de 2026 (Lunes)
