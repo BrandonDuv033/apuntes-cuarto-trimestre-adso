@@ -17,12 +17,12 @@ _"El código se escribe una vez, pero se lee muchas. Documentar es programar par
 
 ## 🧭 Índice general
 
-| #   | Módulo                     | Descripción                                      | Estado      |
-| --- | -------------------------- | ------------------------------------------------ | ----------- |
-| 1   | [🗄️ SQL](./sql/)           | Bases de datos, consultas, modelado relacional   | 🟢 Activo   |
-| 2   | [⚛️ React](./react/)       | Componentes, hooks, JSON Server, consumo de APIs | 🟢 Activo   |
-| 3   | [🌐 Inglés](./ingles/)     | Vocabulario técnico, gramática aplicada a TI     | 🟡 En curso |
-| 4   | [🚀 Proyecto](./proyecto/) | Proyecto formativo — evidencias y avances        | 🟢 Activo   |
+| Materia                    | Descripción                                      |
+| -------------------------- | ------------------------------------------------ |
+| [🗄️ SQL](./sql/)           | Bases de datos, consultas, modelado relacional   |
+| [⚛️ React](./react/)       | Componentes, hooks, JSON Server, consumo de APIs |
+| [🌐 Inglés](./ingles/)     | Vocabulario técnico, gramática aplicada a TI     |
+| [🚀 Proyecto](./proyecto/) | Proyecto formativo — evidencias y avances        |
 
 > 💡 Cada carpeta tiene su propio índice interno con los archivos ordenados por fecha (`YYYY-MM-DD-nombre-del-tema.md`).
 
@@ -32,15 +32,20 @@ _"El código se escribe una vez, pero se lee muchas. Documentar es programar par
 
 ```text
 apuntes-adso/
-├── README.md                  # Índice general (este archivo)
+├── README.md                   # Índice general del repositorio
 ├── sql/
-│   └── YYYY-MM-DD-tema.md
+│   ├── README.md               # Introducción a la materia (SQL)
+│   └── YYYY-MM-DD-tema.md      # Apuntes de clase / temas
 ├── react/
-│   └── YYYY-MM-DD-tema.md
+│   ├── README.md               # Introducción a la materia (React)
+│   └── YYYY-MM-DD-tema.md      # Apuntes de clase / temas
 ├── ingles/
-│   └── YYYY-MM-DD-tema.md
+│   ├── README.md               # Introducción a la materia (Inglés)
+│   └── YYYY-MM-DD-tema.md      # Apuntes de clase / temas
 └── proyecto/
-    └── YYYY-MM-DD-tema.md
+    ├── README.md               # Entregables y avances del 4.º Trimestre
+    ├── entregable-01.md        # Evidencia o documento del entregable 1
+    └── entregable-02.md        # Evidencia o documento del entregable 2
 ```
 
 ---
@@ -48,7 +53,7 @@ apuntes-adso/
 ## ✅ Convenciones del repositorio
 
 <details>
-<summary><strong>📄 Formato de apuntes (clic para expandir)</strong></summary>
+<summary><strong>📄 Formato de apuntes</strong></summary>
 
 Cada archivo `.md` inicia con un bloque de metadatos:
 
@@ -103,9 +108,9 @@ chore(readme): mejorar visualización del índice principal
 
 ```text
 SQL       ██████████████░░░░░░  70%
-React     ████████████░░░░░░░░  60%
+React     ████░░░░░░░░░░░░░░░░  20%
 Inglés    ███████░░░░░░░░░░░░░  35%
-Proyecto  █████████████████░░░  85%
+Proyecto  ████░░░░░░░░░░░░░░░░  20%
 ```
 
 ---
