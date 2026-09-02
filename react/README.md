@@ -24,6 +24,7 @@ Creación de componentes front-end y codificación del software de acuerdo con e
 ## 📂 Clases
 - [2026-08-06 · Crear proyecto React (CRA y Vite)](react/2026-08-06-crear-proyecto-react.md)
 - [2026-08-12 · Componentes](react/2026-08-12-componentes.md)
+- [2026-08-13 · Funciones JSX, arrays, formularios y Bootstrap](react/2026-08-13-funciones-formularios-jsx.md)
 
 ## Recursos adicionales
 
