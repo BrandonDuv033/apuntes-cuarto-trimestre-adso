@@ -7,11 +7,7 @@ Tema: Introducción al curso, reglas y presentación personal
 
 # 🇬🇧 Introducción al Curso y Reglas
 
-[⬅️ Volver al índice de Inglés](./README.md)
-
 </div>
-
----
 
 ## 📚 Contenido
 

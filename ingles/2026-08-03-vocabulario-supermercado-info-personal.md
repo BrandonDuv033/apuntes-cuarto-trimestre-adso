@@ -7,11 +7,7 @@ Tema: Vocabulario de supermercado e información personal
 
 # 🛒 Vocabulario de Supermercado e Información Personal
 
-[⬅️ Volver al índice de Inglés](./README.md)
-
 </div>
-
----
 
 ## 📚 Contenido
 
