@@ -1,16 +1,21 @@
 ---
 Fecha: 2026-09-04
-Tema: Funciones y Procedimientos Almacenados
+Tema: Funciones Almacenadas
 ---
 
-# 🧮 Funciones y Procedimientos Almacenados en MySQL
+# 🧮 Funciones Almacenadas en MySQL
 
-> Sesión enfocada en la creación de **funciones deterministas** en MySQL y su combinación con **procedimientos almacenados** para automatizar el registro de una tabla `empleados`.
+> Sesión enfocada en la creación de **funciones deterministas** en MySQL: su sintaxis, cuándo usarlas y cómo se encadenan unas con otras. Al final se muestra un procedimiento almacenado solo como una **forma de aplicar** las funciones creadas (no es el tema central de la clase).
 
 ## 📑 Tabla de Contenido
 
+- [¿Qué es una Función Almacenada?](#-qué-es-una-función-almacenada)
+- [Sintaxis General](#-sintaxis-general)
 - [Conceptos Clave](#-conceptos-clave)
+- [¿Por qué DETERMINISTIC?](#-por-qué-deterministic)
 - [Diferencia entre Parámetro y Función](#-diferencia-entre-parámetro-y-función)
+- [Función vs. Procedimiento Almacenado](#-función-vs-procedimiento-almacenado)
+- [Buenas Prácticas y Errores Comunes](#-buenas-prácticas-y-errores-comunes)
 - [Ejercicios Básicos](#-ejercicios-básicos)
   - [Ejercicio 1: Precio Base de un Producto](#ejercicio-1-precio-base-de-un-producto)
   - [Ejercicio 2: Total según Cantidad](#ejercicio-2-total-según-cantidad)
@@ -20,7 +25,81 @@ Tema: Funciones y Procedimientos Almacenados
   - [Comisión](#comisión)
   - [Salud y Pensión](#salud-y-pensión)
   - [Total Devengado](#total-devengado)
-- [Procedimiento: Registrar Empleado](#-procedimiento-registrar-empleado)
+- [Aplicación Práctica: Procedimiento Registrar Empleado](#-aplicación-práctica-procedimiento-registrar-empleado)
+
+---
+
+## 🧠 ¿Qué es una Función Almacenada?
+
+Una **función almacenada** (*stored function*) es un bloque de código SQL guardado en la base de datos que:
+
+- Recibe cero o más parámetros de **entrada** (nunca de salida, a diferencia de un procedimiento).
+- **Siempre** devuelve un único valor con `RETURN`, del tipo declarado en `RETURNS`.
+- Se puede usar **dentro de una consulta**, como si fuera una columna calculada: en un `SELECT`, un `WHERE`, un `SET`, etc.
+- Sirve para **encapsular una fórmula o cálculo repetitivo** (ej. liquidar un salario, calcular un impuesto, formatear un dato) para no reescribirlo cada vez.
+
+## 🧾 Sintaxis General
+
+```sql
+CREATE FUNCTION nombreFuncion(parametro1 TIPO, parametro2 TIPO, ...)
+RETURNS tipoDeDato
+DETERMINISTIC
+BEGIN
+    DECLARE variable TIPO;
+    -- lógica / cálculos
+    RETURN variable;
+END
+```
+
+| Parte | Función dentro de la sintaxis |
+|---|---|
+| `CREATE FUNCTION nombre(...)` | Define el nombre y los parámetros de entrada (sin `IN`/`OUT`, se asume que todos son de entrada) |
+| `RETURNS tipoDeDato` | Obligatorio: indica qué tipo de dato va a devolver la función (`INT`, `DOUBLE`, `VARCHAR`, etc.) |
+| `DETERMINISTIC` | Obligatorio para que MySQL permita crear/ejecutar la función (ver sección siguiente) |
+| `DECLARE` | Crea variables locales que solo existen dentro del cuerpo de la función |
+| `RETURN` | Corta la ejecución y devuelve el valor final; toda función debe terminar en un `RETURN` |
+
+---
+
+## 🔑 Conceptos Clave
+
+| Elemento | Descripción |
+|---|---|
+| `RETURNS` | Declara el tipo de dato que la función va a devolver |
+| `DETERMINISTIC` | **Obligatorio** en una función para que MySQL permita su ejecución |
+| Parámetros `IN` | En funciones no se usan `IN`, `OUT` ni `INOUT`; solo se reciben parámetros y se retorna un valor con `RETURN` |
+| Invocación | Se llama con `SELECT`, ejemplo: `nombreBaseDatos.nombreFuncion(parametros)` |
+| `SELECT ... INTO` | Forma de guardar el resultado de una consulta directamente en una variable declarada |
+
+## ⚙️ ¿Por qué DETERMINISTIC?
+
+- MySQL exige clasificar una función como **`DETERMINISTIC`** o **`NOT DETERMINISTIC`**.
+- Una función es *determinista* cuando, dados los **mismos parámetros de entrada**, siempre devuelve el **mismo resultado** (ej. `salarioMensual(2000000, 30)` siempre da lo mismo).
+- Si el binary logging está activado (`bin log`) y no se declara ninguna de las dos opciones, MySQL puede **bloquear la creación de la función** por razones de replicación/seguridad — por eso en clase se usa `DETERMINISTIC` siempre, aunque técnicamente no todas las funciones lo sean al 100%.
+
+## ⚖️ Diferencia entre Parámetro y Función
+
+- **Parámetro:** se usa varias veces dentro de distintos contextos o cálculos.
+- **Función:** se crea para automatizar algo que se repite de forma constante (ej. un cálculo diario).
+
+## 🆚 Función vs. Procedimiento Almacenado
+
+| | Función | Procedimiento |
+|---|---|---|
+| Retorno | Obligatorio, un solo valor (`RETURN`) | Opcional, puede no devolver nada |
+| Parámetros | Solo de entrada | `IN`, `OUT`, `INOUT` |
+| Se puede usar en un `SELECT` | ✅ Sí | ❌ No |
+| Se ejecuta con | `SELECT funcion(...)` | `CALL procedimiento(...)` |
+| Uso típico | Cálculos y fórmulas reutilizables | Acciones (insertar, actualizar, procesos completos) |
+
+> Regla rápida: si necesitas **un valor** para usarlo en otra parte → función. Si necesitas **hacer algo** (insertar, actualizar varias tablas, ejecutar lógica compleja) → procedimiento.
+
+## 🧯 Buenas Prácticas y Errores Comunes
+
+- No nombrar la variable local **igual** que la función (ej. `DECLARE salarioMensual DOUBLE;` dentro de `salarioMensual(...)`) puede generar confusión o conflicto; es más seguro usar un nombre distinto (ej. `v_salarioMensual`).
+- Toda función debe garantizar que llegue a un `RETURN`; si hay condicionales (`IF`), asegurarse de cubrir todos los casos.
+- Al encadenar funciones dentro de otras (como `salarioMensual()` dentro de `comision()`), verificar que los **tipos de parámetros coincidan exactamente** en orden y tipo de dato.
+- Usar `ROUND()` cuando se trabaja con dinero, para evitar decimales largos poco realistas.
 
 ---
 
@@ -158,7 +237,10 @@ END
 
 ---
 
-## ⚙️ Procedimiento: Registrar Empleado
+## 🛠️ Aplicación Práctica: Procedimiento Registrar Empleado
+
+> [!NOTE]
+> Este procedimiento **no es el tema de la clase**, se muestra únicamente como ejemplo de una forma de **usar en conjunto** todas las funciones creadas arriba, insertando un registro completo en una sola llamada.
 
 Procedimiento que inserta un nuevo registro en la tabla `empleados`, reutilizando todas las funciones anteriores para calcular automáticamente cada columna derivada.
 

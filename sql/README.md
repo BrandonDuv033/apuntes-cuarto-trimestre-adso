@@ -25,6 +25,7 @@ Notas de clase de la materia de **Bases de Datos / SQL** — Programa ADSO, SENA
 | [2026-08-14](./2026-08-14-procedimientos-crud-declare.md) | Procedimientos almacenados I | Procedure CRUD, parámetros `IN`, `DECLARE`, `INTO` |
 | [2026-08-18](./2026-08-18-procedure-parametros-out.md) | Procedimientos almacenados II | Parámetros `OUT`, procedure `totalVendido` |
 | [2026-08-25](./2026-08-25-consultas-hotel-procedures.md) | Práctica: sistema hotelero | Subconsultas aplicadas, procedures `historialReservas` y `resumenMensualReservas12` |
+| [2026-09-04](./2026-09-04-funciones-almacenadas.md) | Funciones Almacenadas | Sintaxis general, DETERMINISTIC, Función vs Procedimiento, Buenas prácticas, Caso de estudio (nómina), Procedimiento `registrarEmpleado` |
 
 ---
 
