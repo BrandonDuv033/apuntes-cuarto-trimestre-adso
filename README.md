@@ -26,6 +26,15 @@ _"El código se escribe una vez, pero se lee muchas. Documentar es programar par
 
 > 💡 Cada carpeta tiene su propio índice interno con los archivos ordenados por fecha (`YYYY-MM-DD-nombre-del-tema.md`).
 
+## 🗓️ Agenda próximas fechas
+
+| Día | Actividad |
+|---|---|
+| 21 | Plan de mejoramiento |
+| 22 | No hay clase |
+| 23 | No hay clase |
+| 24 | Sustentación 2:00 p.m. |
+
 ---
 
 ## 🗂️ Estructura del repositorio
