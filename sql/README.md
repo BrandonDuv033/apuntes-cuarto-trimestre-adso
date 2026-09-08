@@ -27,6 +27,7 @@ Notas de clase de la materia de **Bases de Datos / SQL** — Programa ADSO, SENA
 | [2026-08-25](./2026-08-25-consultas-hotel-procedures.md) | Práctica: sistema hotelero | Subconsultas aplicadas, procedures `historialReservas` y `resumenMensualReservas12` |
 | [2026-09-04](./2026-09-04-funciones-y-procedimientos-almacenados.md) | Funciones Almacenadas | Sintaxis general, DETERMINISTIC, Función vs Procedimiento, Buenas prácticas, Caso de estudio (nómina), Procedimiento `registrarEmpleado` |
 | [2026-09-07](./2026-09-07-triggers.md) | Triggers (Disparadores) | `BEFORE`/`AFTER`, `FOR EACH ROW`, `OLD`/`NEW`, `SIGNAL`, auditoría, control de stock |
+| [2026-09-08](./2026-09-08-funciones-encriptacion-compresion.md) | Funciones de Encriptación y Compresión | `HASH` vs Cifrado, `AES_ENCRYPT()`, `AES_DECRYPT()`, `SHA2()` como derivador de clave |
 
 ---
 
